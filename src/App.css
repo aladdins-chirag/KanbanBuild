@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+::-webkit-scrollbar {
+    width: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#popover-body {
+    display: flex;
+    gap: 3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.profile-modal {
+    width: 200px;
+    min-height: 50vh;
+    background-color: white;
+    position: absolute;
+    top: 1;
+    right: 0;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    z-index: 999;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-modal:hover {
+    display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-heading {
+    margin: auto;
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 1px;
+}
+
+.footer-logout {
+    min-width: 82%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 18px;
+}
+
+.no-button-style {
+    background-color: transparent;
+    border: none;
+}
+
+.divider {
+    border: 1px solid rgb(151, 151, 151);
+    width: 100%;
+    min-height: 0px;
+    margin: 1px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.circle {
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6px;
+    position: relative;
+}
+
+.font-style {
+    color: rgb(101, 136, 241);
+    font-weight: bold;
+}
+
+.profile {
+    border-radius: 100%;
+    background-color: aliceblue;
+}
+
+li {
+    list-style: none;
+}
+
+
+.scrollable-div {
+    overflow: auto;
+}
+
+.scrollable-div::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.scrollable-div::-webkit-scrollbar-track {
+    box-shadow: 0 0 5px grey;
+}
+
+/* Handle */
+.scrollable-div::-webkit-scrollbar-thumb {
+    background: #d3d3d3
+}
+
+/* Handle on hover */
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
 }
