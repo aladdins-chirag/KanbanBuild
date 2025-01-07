@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const Fetch = async (type, url, data) => {
     const res = await axios({
-        baseURL: 'http://localhost:5001/api',
+        baseURL: 'https://kanbanserver-0wl6.onrender.com/api',
         method: type,
         url: url,
         data: data,
@@ -12,6 +12,6 @@ export const Fetch = async (type, url, data) => {
 }
 
 export const AxiosFetch = axios.create({
-    baseURL: 'http://localhost:5001/api',
+    baseURL: 'https://kanbanserver-0wl6.onrender.com/api',
     withCredentials: true
 })
