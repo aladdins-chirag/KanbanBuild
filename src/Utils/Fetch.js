@@ -12,6 +12,6 @@ export const Fetch = async (type, url, data) => {
 }
 
 export const AxiosFetch = axios.create({
-    baseURL: 'http://localhost:5001/api',
+    baseURL: 'https://kanbanserver-0wl6.onrender.com/api',
     withCredentials: true
 })
