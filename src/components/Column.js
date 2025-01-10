@@ -18,7 +18,7 @@ export const TaskContext = createContext({
   markDown: (id, dropZone) => { },
 })
 
-var ENDPOINT = 'http://localhost:5001/'
+var ENDPOINT = 'https://kanbanserver-0wl6.onrender.com/'
 var socketConnection
 
 function Column() {
